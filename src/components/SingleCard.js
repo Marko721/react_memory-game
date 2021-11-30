@@ -1,17 +1,13 @@
 import React from "react";
 import "./SingleCard.css";
 
-const SingleCard = ({ cards }) => {
+const SingleCard = ({ card }) => {
   return (
-    <div className="card-grid">
-      {cards.map((card) => (
-        <div className="card" key={card.id}>
-          <div>
-            <img className="front" src={card.src} alt="card front" />
-            <img className="back" src="/img/cover.png" alt="card back" />
-          </div>
-        </div>
-      ))}
+    <div className="card">
+      <div>
+        <img className="front" src={card.src} alt="card front" />
+        <img className="back" src="/img/cover.png" alt="card back" />
+      </div>
     </div>
   );
 };
